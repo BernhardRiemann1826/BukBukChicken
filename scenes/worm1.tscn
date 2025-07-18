@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgdtsqcqw4g0x"]
+
+[ext_resource type="Texture2D" uid="uid://cgddl5gkljtn8" path="res://assets/sprites/worm1.png" id="1_7uvbq"]
+[ext_resource type="Script" uid="uid://b4xr2c1hspjed" path="res://scripts/levels/worm_1.gd" id="1_ur6x7"]
+
+[node name="worm1" type="Node2D"]
+scale = Vector2(0.05, 0.05)
+script = ExtResource("1_ur6x7")
+
+[node name="Worm1" type="Sprite2D" parent="."]
+position = Vector2(1119, 980)
+texture = ExtResource("1_7uvbq")

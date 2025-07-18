@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjq4eev1d3xrk"]
+
+[ext_resource type="Script" uid="uid://de1g0idofm8rm" path="res://scripts/levels/mushroom.gd" id="1_0bdi0"]
+[ext_resource type="Texture2D" uid="uid://cdqepuhvwam8c" path="res://assets/sprites/mushroom.png" id="1_b0s10"]
+
+[node name="mushroom" type="Node2D"]
+scale = Vector2(0.05, 0.05)
+script = ExtResource("1_0bdi0")
+
+[node name="Mushroom" type="Sprite2D" parent="."]
+position = Vector2(923, 637)
+texture = ExtResource("1_b0s10")
