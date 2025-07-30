@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b1iwjt67mjoy0" path="res://scripts/levels/worm_2.gd" id="1_km63t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_km63t"]
-size = Vector2(655, 147.5)
+size = Vector2(655, 153.75)
 
 [node name="worm2" type="Node2D"]
 z_index = 3
@@ -18,6 +18,6 @@ texture = ExtResource("1_fllvg")
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Worm2/worm"]
-position = Vector2(160, -406.25)
+position = Vector2(160, -400)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_km63t")

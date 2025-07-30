@@ -18,7 +18,7 @@ var spawn_interval = 1.0
 var spawn_timer = 0.0
 
 var spawn_y_min = 320.0
-var spawn_y_max = 330.0
+var spawn_y_max = 325.0
 
 var chicken_sound_timer_interval = 0
 var game_over = false  # Add game_over to prevent unnecessary logic

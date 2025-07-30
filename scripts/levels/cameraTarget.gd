@@ -12,15 +12,18 @@ var stamina = 50
 var max_stamina = 100
 var game_over = false
 
+func _ready():
+	peck_area.monitoring = false  # 🛑 Ensure it's off on startup
+
 func _process(delta):
 	if game_over:
 		return
+
 	if Input.is_action_just_pressed("peck") and not is_pecking:
 		is_pecking = true
 		chicken_sprite.play("peck")
 
-		# Enable collision for pecking
-		peck_area.monitoring = true
+		# Enable collision for pecking (deferred is safest)
 		peck_area.set_deferred("monitoring", true)
 
 func _on_chicken_animation_finished():
